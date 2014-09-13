@@ -1,0 +1,94 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: DBT
+
+; Microsoft Dynamics AX Table : AotIndexProperties unloaded
+; --------------------------------------------------------------------------------
+  TABLEVERSION 1
+  
+  TABLE #AotIndexProperties
+    EnforceFKRelation 0
+    PROPERTIES
+      Name                #AotIndexProperties
+      CreateRecIdIndex    #Yes
+      SaveDataPerCompany  #No
+      PrimaryIndex        #RecId
+      ClusterIndex        #RecId
+      CreatedDateTime     #Yes
+      DEL_createdTime     #Yes
+      Origin              #{276ABA01-1765-48E1-8145-E376EDA4C463}
+      LegacyId            #50002
+    ENDPROPERTIES
+    
+    FIELDS
+      FIELD #AllowDuplicates
+        INT
+        PROPERTIES
+          Name                #AllowDuplicates
+          Table               #AotIndexProperties
+          Origin              #{F90FD4DE-E64A-4787-A32C-B65911D7BDE3}
+          LegacyId            #50003
+        ENDPROPERTIES
+        
+      FIELD #AppLayer
+        STRING
+        PROPERTIES
+          Name                #AppLayer
+          Table               #AotIndexProperties
+          Origin              #{DB7071AF-F0BB-4501-8E4C-5C6B08031FA4}
+          LegacyId            #50005
+          StringSize          #3
+        ENDPROPERTIES
+        
+      FIELD #IndexId
+        INT
+        PROPERTIES
+          Name                #IndexId
+          Table               #AotIndexProperties
+          Origin              #{D7F003F7-E6FF-4D98-A663-EA30E52ECFD4}
+          LegacyId            #50004
+        ENDPROPERTIES
+        
+      FIELD #IndexName
+        STRING
+        PROPERTIES
+          Name                #IndexName
+          Table               #AotIndexProperties
+          Origin              #{F58124D5-1FDF-4A83-B737-9E54AE01C764}
+          LegacyId            #50002
+          ExtendedDataType    #IndexName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #TableName
+        STRING
+        PROPERTIES
+          Name                #TableName
+          Table               #AotIndexProperties
+          Origin              #{2216B6B3-6A5C-420F-95D2-0C2D48539102}
+          LegacyId            #50001
+          ExtendedDataType    #TableName
+          StringSize          #40
+        ENDPROPERTIES
+        
+    ENDFIELDS
+    GROUPS
+    ENDGROUPS
+    
+    INDICES
+    ENDINDICES
+    FULLTEXTINDICES
+    ENDFULLTEXTINDICES
+    REFERENCES
+    ENDREFERENCES
+    
+    DELETEACTIONS
+    ENDDELETEACTIONS
+    
+    METHODS
+    ENDMETHODS
+  ENDTABLE
+  
+
+***Element: END

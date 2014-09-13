@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelManifest SchemaVersion="1.9" ModelFileVersion="18" ElementCount="47" ModelBuildVersion="">
+  <Name>DynamicsPerf</Name>
+  <DisplayName>DynamicsPerf</DisplayName>
+  <Description />
+  <Publisher>Microsoft</Publisher>
+  <Signed>false</Signed>
+  <Category>Standard</Category>
+  <InstallMode>Standard</InstallMode>
+  <Version>1.0.0.0</Version>
+  <Layer>Usr</Layer>
+  <DependencyState />
+</ModelManifest>

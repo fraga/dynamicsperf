@@ -1,0 +1,258 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: DBT
+
+; Microsoft Dynamics AX Table : AotTableProperties unloaded
+; --------------------------------------------------------------------------------
+  TABLEVERSION 1
+  
+  TABLE #AotTableProperties
+    EnforceFKRelation 0
+    PROPERTIES
+      Name                #AotTableProperties
+      CreateRecIdIndex    #Yes
+      SaveDataPerCompany  #No
+      PrimaryIndex        #RecId
+      ClusterIndex        #RecId
+      CreatedDateTime     #Yes
+      DEL_createdTime     #Yes
+      Origin              #{2CBCE58B-52C2-4F6C-8324-DABDD234B072}
+      LegacyId            #50003
+    ENDPROPERTIES
+    
+    FIELDS
+      FIELD #AosValidateDelete
+        INT
+        PROPERTIES
+          Name                #AosValidateDelete
+          Table               #AotTableProperties
+          Origin              #{3A8107C5-E859-4D24-AF61-F46A6B394050}
+          LegacyId            #50013
+        ENDPROPERTIES
+        
+      FIELD #AosValidateInsert
+        INT
+        PROPERTIES
+          Name                #AosValidateInsert
+          Table               #AotTableProperties
+          Origin              #{8A73DDC9-09E5-4679-B1F5-56CE03E7500E}
+          LegacyId            #50011
+        ENDPROPERTIES
+        
+      FIELD #AosValidateUpdate
+        INT
+        PROPERTIES
+          Name                #AosValidateUpdate
+          Table               #AotTableProperties
+          Origin              #{42CE8349-89B6-4D95-B26D-3650CD04DC26}
+          LegacyId            #50012
+        ENDPROPERTIES
+        
+      FIELD #AppLayer
+        STRING
+        PROPERTIES
+          Name                #AppLayer
+          Table               #AotTableProperties
+          Origin              #{C6C9F71E-10CE-487B-9625-EEA66ACAC0A9}
+          LegacyId            #50023
+          StringSize          #3
+        ENDPROPERTIES
+        
+      FIELD #CacheLookup
+        INT
+        PROPERTIES
+          Name                #CacheLookup
+          Table               #AotTableProperties
+          Origin              #{65135A54-A599-4BF3-9A6B-540A0E2D8A91}
+          LegacyId            #50004
+        ENDPROPERTIES
+        
+      FIELD #ClusteredIndex
+        STRING
+        PROPERTIES
+          Name                #ClusteredIndex
+          Table               #AotTableProperties
+          Origin              #{92AF4793-5DF8-457A-ABD7-C90DF6663EAD}
+          LegacyId            #50006
+          ExtendedDataType    #IndexName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #DatabaseLogDelete
+        INT
+        PROPERTIES
+          Name                #DatabaseLogDelete
+          Table               #AotTableProperties
+          Origin              #{23CAB24C-2F1A-42BF-8BDE-01267D9D6C29}
+          LegacyId            #50015
+        ENDPROPERTIES
+        
+      FIELD #DatabaseLogInsert
+        INT
+        PROPERTIES
+          Name                #DatabaseLogInsert
+          Table               #AotTableProperties
+          Origin              #{2B5AB399-AC07-4D7B-A981-C97E7ED25F7C}
+          LegacyId            #50014
+        ENDPROPERTIES
+        
+      FIELD #DatabaseLogRenameKey
+        INT
+        PROPERTIES
+          Name                #DatabaseLogRenameKey
+          Table               #AotTableProperties
+          Origin              #{D2E38564-3294-496D-8314-8F406E514F06}
+          LegacyId            #50017
+        ENDPROPERTIES
+        
+      FIELD #DatabaseLogUpdate
+        INT
+        PROPERTIES
+          Name                #DatabaseLogUpdate
+          Table               #AotTableProperties
+          Origin              #{6F8FBDB5-F269-4163-A0CF-1762CF3FDE26}
+          LegacyId            #50016
+        ENDPROPERTIES
+        
+      FIELD #DataPerCompany
+        INT
+        PROPERTIES
+          Name                #DataPerCompany
+          Table               #AotTableProperties
+          Origin              #{7FEF5BD6-C2DB-468A-A809-5DB0FC4E0868}
+          LegacyId            #50010
+        ENDPROPERTIES
+        
+      FIELD #DeleteMethodOverridden
+        INT
+        PROPERTIES
+          Name                #DeleteMethodOverridden
+          Table               #AotTableProperties
+          Origin              #{441DF8D9-0A21-4ECF-8E7A-0F158713C3C2}
+          LegacyId            #50009
+        ENDPROPERTIES
+        
+      FIELD #EventDelete
+        INT
+        PROPERTIES
+          Name                #EventDelete
+          Table               #AotTableProperties
+          Origin              #{B014035B-7D00-4CEE-8115-D836FDCAA128}
+          LegacyId            #50019
+        ENDPROPERTIES
+        
+      FIELD #EventInsert
+        INT
+        PROPERTIES
+          Name                #EventInsert
+          Table               #AotTableProperties
+          Origin              #{083D2A1C-67AC-436B-974A-9730731473F2}
+          LegacyId            #50018
+        ENDPROPERTIES
+        
+      FIELD #EventRenameKey
+        INT
+        PROPERTIES
+          Name                #EventRenameKey
+          Table               #AotTableProperties
+          Origin              #{3AA8515A-11C7-4974-B6A8-3874CC3EF1A9}
+          LegacyId            #50021
+        ENDPROPERTIES
+        
+      FIELD #EventUpdate
+        INT
+        PROPERTIES
+          Name                #EventUpdate
+          Table               #AotTableProperties
+          Origin              #{C8FA6342-2042-4260-AA1E-C39885240E3E}
+          LegacyId            #50020
+        ENDPROPERTIES
+        
+      FIELD #InsertMethodOverridden
+        INT
+        PROPERTIES
+          Name                #InsertMethodOverridden
+          Table               #AotTableProperties
+          Origin              #{3D21D2CF-C645-43EB-B14B-4B51A3495C01}
+          LegacyId            #50007
+        ENDPROPERTIES
+        
+      FIELD #OCCEnabled
+        INT
+        PROPERTIES
+          Name                #OCCEnabled
+          Table               #AotTableProperties
+          Origin              #{266B937E-2BA5-45B8-A580-1956BDE037E1}
+          LegacyId            #50003
+        ENDPROPERTIES
+        
+      FIELD #PrimaryKey
+        STRING
+        PROPERTIES
+          Name                #PrimaryKey
+          Table               #AotTableProperties
+          Origin              #{286332F7-9CBF-4DCA-857D-A0F8FEE030A8}
+          LegacyId            #50005
+          ExtendedDataType    #IndexName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #TabId
+        INT
+        PROPERTIES
+          Name                #TabId
+          Table               #AotTableProperties
+          Origin              #{179A3707-D53A-4F85-B024-8D23E0AF601D}
+          LegacyId            #50022
+        ENDPROPERTIES
+        
+      FIELD #TableGroup
+        INT
+        PROPERTIES
+          Name                #TableGroup
+          Table               #AotTableProperties
+          Origin              #{5B116C67-9FC6-4D2E-893A-9524940956D9}
+          LegacyId            #50001
+        ENDPROPERTIES
+        
+      FIELD #TableName
+        STRING
+        PROPERTIES
+          Name                #TableName
+          Table               #AotTableProperties
+          Origin              #{33728BED-977D-4E4F-8306-24BDAAEF56DC}
+          LegacyId            #50002
+          ExtendedDataType    #TableName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #UpdateMethodOverridden
+        INT
+        PROPERTIES
+          Name                #UpdateMethodOverridden
+          Table               #AotTableProperties
+          Origin              #{6C3298FC-186B-4FBF-B437-C865D973DAEA}
+          LegacyId            #50008
+        ENDPROPERTIES
+        
+    ENDFIELDS
+    GROUPS
+    ENDGROUPS
+    
+    INDICES
+    ENDINDICES
+    FULLTEXTINDICES
+    ENDFULLTEXTINDICES
+    REFERENCES
+    ENDREFERENCES
+    
+    DELETEACTIONS
+    ENDDELETEACTIONS
+    
+    METHODS
+    ENDMETHODS
+  ENDTABLE
+  
+
+***Element: END

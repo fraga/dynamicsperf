@@ -1,0 +1,86 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: DBT
+
+; Microsoft Dynamics AX Table : AotIndexFields unloaded
+; --------------------------------------------------------------------------------
+  TABLEVERSION 1
+  
+  TABLE #AotIndexFields
+    EnforceFKRelation 0
+    PROPERTIES
+      Name                #AotIndexFields
+      CreateRecIdIndex    #Yes
+      SaveDataPerCompany  #No
+      PrimaryIndex        #RecId
+      ClusterIndex        #RecId
+      CreatedDateTime     #Yes
+      DEL_createdTime     #Yes
+      Origin              #{0970103A-BBC3-423A-9C76-4308E42BBDC1}
+      LegacyId            #50001
+    ENDPROPERTIES
+    
+    FIELDS
+      FIELD #FieldName
+        STRING
+        PROPERTIES
+          Name                #FieldName
+          Table               #AotIndexFields
+          Origin              #{AFCBF0C5-986F-46FD-ABE4-517055A4FC12}
+          LegacyId            #50003
+          ExtendedDataType    #FieldName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #FieldPosition
+        INT
+        PROPERTIES
+          Name                #FieldPosition
+          Table               #AotIndexFields
+          Origin              #{D917F71B-124E-494B-99E7-0CD1B599E776}
+          LegacyId            #50004
+        ENDPROPERTIES
+        
+      FIELD #IndexName
+        STRING
+        PROPERTIES
+          Name                #IndexName
+          Table               #AotIndexFields
+          Origin              #{68A97356-7D85-44EE-A3EB-F1BC84E761D3}
+          LegacyId            #50002
+          ExtendedDataType    #IndexName
+          StringSize          #40
+        ENDPROPERTIES
+        
+      FIELD #TableName
+        STRING
+        PROPERTIES
+          Name                #TableName
+          Table               #AotIndexFields
+          Origin              #{8ACB4D12-C13A-4E50-8DDD-1681ADBC320B}
+          LegacyId            #50001
+          ExtendedDataType    #TableName
+          StringSize          #40
+        ENDPROPERTIES
+        
+    ENDFIELDS
+    GROUPS
+    ENDGROUPS
+    
+    INDICES
+    ENDINDICES
+    FULLTEXTINDICES
+    ENDFULLTEXTINDICES
+    REFERENCES
+    ENDREFERENCES
+    
+    DELETEACTIONS
+    ENDDELETEACTIONS
+    
+    METHODS
+    ENDMETHODS
+  ENDTABLE
+  
+
+***Element: END

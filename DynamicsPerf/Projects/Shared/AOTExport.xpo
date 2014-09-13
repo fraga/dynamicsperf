@@ -1,0 +1,45 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: PRN
+
+; Microsoft Dynamics AX Project : AOTExport unloaded
+; --------------------------------------------------------------------------------
+  PROJECTVERSION 2
+  
+  PROJECT #AOTExport
+  SHARED
+  PROPERTIES
+    Name                #AOTExport
+    Origin              #{AC804A3C-6DE1-4081-B1BD-E1D734BB6733}
+  ENDPROPERTIES
+  
+    PROJECTCLASS ProjectNode
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 45
+      NODETYPE 329
+      NAME #AOTExport
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 44
+      NODETYPE 204
+      NAME #AotIndexProperties
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 44
+      NODETYPE 204
+      NAME #AotIndexFields
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 44
+      NODETYPE 204
+      NAME #AotTableProperties
+    ENDNODE
+  ENDPROJECT
+  
+
+***Element: END
