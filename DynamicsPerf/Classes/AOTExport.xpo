@@ -317,9 +317,13 @@ Formatversion: 1
         #
       ENDSOURCE
       SOURCE #construct
-        #public static AOTExport construct()
+        #public static server AOTExport construct()
         #{
         #    AOTExport aotExport = new AOTExport();
+        #
+        #    aotExport.parmLoadFromSysLastValue(false);
+        #    aotExport.parmShowDialog(false);
+        #    aotExport.batchInfo().parmBatchExecute(true);
         #
         #    return aotExport;
         #}
