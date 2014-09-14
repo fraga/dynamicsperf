@@ -315,6 +315,14 @@ Formatversion: 1
         #}
         #
       ENDSOURCE
+      SOURCE #construct
+        #public static AOTExport construct()
+        #{
+        #    AOTExport aotExport = new AOTExport();
+        #
+        #    return aotExport;
+        #}
+      ENDSOURCE
       SOURCE #main
         #public server static void main(Args args)
         #{
