@@ -10,7 +10,7 @@ Formatversion: 1
   CLASS #AOTExport
     PROPERTIES
       Name                #AOTExport
-      Extends             #RunBaseBatch
+      Extends             #SysOperationServiceController
       Origin              #{C4043C9B-C656-415B-8D84-2E570DCF6BAE}
       LegacyId            #50001
     ENDPROPERTIES
@@ -23,7 +23,7 @@ Formatversion: 1
         #}
       ENDSOURCE
       SOURCE #classDeclaration
-        #class AOTExport extends RunBaseBatch
+        #class AOTExport extends SysOperationServiceController
         #{
         #
         #}
