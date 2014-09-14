@@ -329,18 +329,11 @@ Formatversion: 1
         #}
       ENDSOURCE
       SOURCE #main
-        #public server static void main(Args args)
+        #public static void main(Args args)
         #{
-        #    AOTExport   aotExport;
-        #    ;
+        #    AOTExport   aotExport = AOTExport::construct();
         #
-        #
-        #
-        #    aotExport = new AOTExport();
-        #
-        #
-        #
-        #    aotExport.run();
+        #    aotExport.startOperation();
         #
         #}
       ENDSOURCE
