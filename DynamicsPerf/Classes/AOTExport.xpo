@@ -306,7 +306,7 @@ Formatversion: 1
         #    indexList.insertDatabase();
         #    fieldList.insertDatabase();
         #    stop  = WinAPI::getTickCount64();
-        #    Info(strFmt("AOTExport Duration: %1 ms", stop - start));
+        #    Info(strFmt('AOTExport Duration: %1 ms', stop - start));
         #}
         #
       ENDSOURCE
