@@ -17,6 +17,12 @@ Formatversion: 1
     ENDPROPERTIES
     
     METHODS
+      SOURCE #canGoBatch
+        #public boolean canGoBatch()
+        #{
+        #    return true;
+        #}
+      ENDSOURCE
       SOURCE #canGoBatchJournal
         #protected boolean canGoBatchJournal()
         #{
