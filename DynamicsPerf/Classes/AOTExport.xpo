@@ -28,13 +28,6 @@ Formatversion: 1
         #
         #}
       ENDSOURCE
-      SOURCE #pack
-        #public container pack()
-        #{
-        #    return conNull();
-        #}
-        #
-      ENDSOURCE
       SOURCE #performOperation
         #[SysEntryPointAttribute]
         #public void performOperation()
@@ -315,12 +308,6 @@ Formatversion: 1
         #    Info(strFmt('AOTExport Duration: %1 ms', stop - start));
         #}
         #
-      ENDSOURCE
-      SOURCE #unpack
-        #public boolean unpack(container packedClass)
-        #{
-        #    return true;
-        #}
       ENDSOURCE
       SOURCE #main
         #public server static void main(Args args)
