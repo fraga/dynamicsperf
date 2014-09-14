@@ -28,6 +28,12 @@ Formatversion: 1
         #
         #}
       ENDSOURCE
+      SOURCE #new
+        #public void new()
+        #{
+        #    super(classStr(AOTExport), methodStr(AOTExport, performOperation), SysOperationExecutionMode::Asynchronous);
+        #}
+      ENDSOURCE
       SOURCE #performOperation
         #[SysEntryPointAttribute]
         #public void performOperation()
