@@ -104,7 +104,7 @@ Formatversion: 1
         #    }
         #    catch
         #    {
-        #        throw error("Error while performing operation");
+        #        throw error('Error while performing operation');
         #    }
         #}
       ENDSOURCE
