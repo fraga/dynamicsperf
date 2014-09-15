@@ -116,6 +116,7 @@ Formatversion: 1
         #    aotExport.parmLoadFromSysLastValue(false);
         #    aotExport.parmShowDialog(false);
         #    aotExport.batchInfo().parmBatchExecute(true);
+        #    aotExport.parmThreads(3);
         #
         #    return aotExport;
         #}
