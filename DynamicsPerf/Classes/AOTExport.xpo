@@ -53,7 +53,7 @@ Formatversion: 1
         #    AOTExportTableRun   tableRunTask;
         #    try
         #    {
-        #
+        #        threads = 3;
         #
         #        if(!this.canGoBatch() || !this.isInBatch())
         #            return;
