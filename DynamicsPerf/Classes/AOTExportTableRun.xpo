@@ -1,0 +1,26 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: AOTExportTableRun unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #AOTExportTableRun
+    PROPERTIES
+      Name                #AOTExportTableRun
+      Extends             #SysOperationServiceController
+      Origin              #{5750F1D5-ED66-494D-812C-829259071154}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #class AOTExportTableRun extends SysOperationServiceController
+        #{
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: END
