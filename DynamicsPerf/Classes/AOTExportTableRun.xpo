@@ -295,6 +295,12 @@ Formatversion: 1
         #    Info(strFmt('Finished set of tables'));
         #}
       ENDSOURCE
+      SOURCE #new
+        #public void new()
+        #{
+        #    super(classStr(AOTExportTableRun), methodStr(AOTExportTableRun, generateTableMetaData), SysOperationExecutionMode::Asynchronous);
+        #}
+      ENDSOURCE
       SOURCE #parmTableSet
         #public Set parmTableSet(Set _tableSet = tableSet)
         #{
