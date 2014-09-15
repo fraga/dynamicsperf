@@ -46,7 +46,66 @@ Formatversion: 1
         #[SysEntryPointAttribute]
         #public void performOperation()
         #{
+        #    BatchHeader         header;
+        #    Dictionary          dict = new Dictionary();
+        #    int                 counter, totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
+        #    Set                 tableSet = new Set(Types::Integer);
+        #    AOTExportTableRun   tableRunTask;
+        #    try
+        #    {
         #
+        #
+        #        if(!this.canGoBatch() || !this.isInBatch())
+        #            return;
+        #
+        #        header = BatchHeader::getCurrentBatchHeader();
+        #
+        #        totalTables = dict.tableCnt();
+        #        rangeEnd = totalTables;
+        #        rangeStart = 1;
+        #
+        #        step = totalTables / threads;
+        #
+        #        while(threads && i < threads)
+        #        {
+        #            i++;
+        #            if(i == threads)
+        #                rangeEnd = totalTables;
+        #            else
+        #                rangeEnd = rangeStart + step;
+        #
+        #            addCount = rangeStart;
+        #
+        #            while(addCount <= rangeEnd)
+        #            {
+        #                tableSet.add(dict.tableCnt2Id(addCount));
+        #                addCount++;
+        #            }
+        #
+        #            tableRunTask = AOTExportTableRun::construct();
+        #            tableRunTask.parmLoadFromSysLastValue(false);
+        #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
+        #            tableRunTask.parmTableSet(tableSet);
+        #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', rangeStart, rangeEnd));
+        #
+        #            header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
+        #
+        #            rangeStart = rangeEnd + 1;
+        #        }
+        #
+        #    }
+        #    catch(Exception::UpdateConflict)
+        #    {
+        #        retry;
+        #    }
+        #    catch(Exception::Deadlock)
+        #    {
+        #        retry;
+        #    }
+        #    catch
+        #    {
+        #        throw error("Error while performing operation");
+        #    }
         #}
       ENDSOURCE
       SOURCE #construct
