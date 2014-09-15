@@ -38,11 +38,6 @@ Formatversion: 1
         #[SysEntryPointAttribute]
         #public void performOperation()
         #{
-        #}
-      ENDSOURCE
-      SOURCE #run
-        #public void run()
-        #{
         #    DictTable           dictTable;
         #    DictIndex           dictIndex;
         #    DictField           dictField;
@@ -310,7 +305,6 @@ Formatversion: 1
         #
         #    Info(strFmt('AOTExport Completed'));
         #}
-        #
       ENDSOURCE
       SOURCE #construct
         #public static server AOTExport construct()
