@@ -48,7 +48,7 @@ Formatversion: 1
         #{
         #    BatchHeader         header;
         #    Dictionary          dict = new Dictionary();
-        #    int                 counter, totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
+        #    int                 totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
         #    Set                 tableSet = new Set(Types::Integer);
         #    AOTExportTableRun   tableRunTask;
         #    try
