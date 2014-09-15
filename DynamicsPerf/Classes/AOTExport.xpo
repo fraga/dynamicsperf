@@ -11,7 +11,6 @@ Formatversion: 1
     PROPERTIES
       Name                #AOTExport
       Extends             #SysOperationServiceController
-      RunOn               #Server
       Origin              #{C4043C9B-C656-415B-8D84-2E570DCF6BAE}
       LegacyId            #50001
     ENDPROPERTIES
