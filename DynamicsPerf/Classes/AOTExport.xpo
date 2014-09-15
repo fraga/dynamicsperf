@@ -58,7 +58,6 @@ Formatversion: 1
         #    RecordInsertList    fieldList;
         #    DatabaseLog         databaseLog;
         #    UtilIdElements      utilIdElements;
-        #    int64               start, stop;
         # //
         # // Variables used when looping through dictionary objects
         # // The variable is either initialized to 1 or to max # of objects
@@ -93,9 +92,7 @@ Formatversion: 1
         #    boolean             eventdelete;
         #    boolean             eventupdate;
         #    boolean             eventrenamekey;
-        #    ;
         #
-        #    start = WinAPI::getTickCount64();
         #//
         #//  Delete existing rows - we overwrite all 3 tables on each run
         #//
@@ -311,8 +308,8 @@ Formatversion: 1
         #    tableList.insertDatabase();
         #    indexList.insertDatabase();
         #    fieldList.insertDatabase();
-        #    stop  = WinAPI::getTickCount64();
-        #    Info(strFmt('AOTExport Duration: %1 ms', stop - start));
+        #
+        #    Info(strFmt('AOTExport Completed'));
         #}
         #
       ENDSOURCE
