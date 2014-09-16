@@ -103,14 +103,12 @@ Formatversion: 1
         #}
       ENDSOURCE
       SOURCE #construct
-        #public static server AOTExport construct()
+        #public static AOTExport construct()
         #{
         #    AOTExport aotExport = new AOTExport();
         #
         #    aotExport.parmLoadFromSysLastValue(false);
-        #    aotExport.parmShowDialog(false);
         #    aotExport.batchInfo().parmBatchExecute(true);
-        #    aotExport.parmThreads(3);
         #
         #    return aotExport;
         #}
