@@ -34,14 +34,6 @@ Formatversion: 1
         #    super(classStr(AOTExport), methodStr(AOTExport, performOperation), SysOperationExecutionMode::Asynchronous);
         #}
       ENDSOURCE
-      SOURCE #parmThreads
-        #public int parmThreads(int _threads = threads)
-        #{
-        #    threads = _threads;
-        #
-        #    return threads;
-        #}
-      ENDSOURCE
       SOURCE #performOperation
         #[SysEntryPointAttribute]
         #public void performOperation()
