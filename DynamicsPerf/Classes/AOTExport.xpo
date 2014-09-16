@@ -48,7 +48,7 @@ Formatversion: 1
         #        threads = _dataContract.parmThreads();
         #
         #        if(!this.canGoBatch() || !this.isInBatch())
-        #            return;
+        #            throw error('this must be run in batch');
         #
         #        header = BatchHeader::getCurrentBatchHeader();
         #
