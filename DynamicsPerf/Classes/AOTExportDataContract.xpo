@@ -21,6 +21,12 @@ Formatversion: 1
         #    int threads;
         #}
       ENDSOURCE
+      SOURCE #new
+        #public void new()
+        #{
+        #    threads = 1;
+        #}
+      ENDSOURCE
       SOURCE #parmThreads
         #[DataMemberAttribute]
         #public int parmThreads(int _threads = threads)
