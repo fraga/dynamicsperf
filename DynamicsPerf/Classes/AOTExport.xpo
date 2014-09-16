@@ -36,7 +36,7 @@ Formatversion: 1
       ENDSOURCE
       SOURCE #performOperation
         #[SysEntryPointAttribute]
-        #public void performOperation()
+        #public void performOperation(AOTExportDataContract _dataContract)
         #{
         #    BatchHeader         header;
         #    Dictionary          dict = new Dictionary();
