@@ -93,6 +93,8 @@ Formatversion: 1
         #            rangeStart = rangeEnd + 1;
         #        }
         #
+        #        header.save();
+        #
         #    }
         #    catch(Exception::UpdateConflict)
         #    {
