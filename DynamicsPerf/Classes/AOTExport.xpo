@@ -45,7 +45,7 @@ Formatversion: 1
         #    AOTExportTableRun   tableRunTask;
         #    try
         #    {
-        #        threads = 3;
+        #        threads = _dataContract.parmThreads();
         #
         #        if(!this.canGoBatch() || !this.isInBatch())
         #            return;
