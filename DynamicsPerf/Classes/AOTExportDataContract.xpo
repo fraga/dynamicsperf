@@ -1,0 +1,36 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: AOTExportDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #AOTExportDataContract
+    PROPERTIES
+      Name                #AOTExportDataContract
+      Origin              #{1004890E-E3B7-4835-B2E1-DAA9B22989DF}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #class AOTExportDataContract
+        #{
+        #    int threads;
+        #}
+      ENDSOURCE
+      SOURCE #parmThreads
+        #[DataMemberAttribute]
+        #public int parmThreads(int _threads = threads)
+        #{
+        #    threads = _threads;
+        #
+        #    return threads;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: END
