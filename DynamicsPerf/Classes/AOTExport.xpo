@@ -41,7 +41,7 @@ Formatversion: 1
         #    BatchHeader         header;
         #    Dictionary          dict = new Dictionary();
         #    int                 totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
-        #    Set                 tableSet = new Set(Types::Integer);
+        #    Set                 tableSet;
         #    AOTExportTableRun   tableRunTask;
         #    try
         #    {
@@ -60,6 +60,8 @@ Formatversion: 1
         #
         #        while(threads && i < threads)
         #        {
+        #            tableSet = new Set(Types::Integer);
+        #
         #            i++;
         #            if(i == threads)
         #                rangeEnd = totalTables;
