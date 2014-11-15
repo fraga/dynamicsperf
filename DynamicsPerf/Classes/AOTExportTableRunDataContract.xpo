@@ -1,0 +1,36 @@
+Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: AOTExportTableRunDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #AOTExportTableRunDataContract
+    PROPERTIES
+      Name                #AOTExportTableRunDataContract
+      Origin              #{F22B320A-9727-4395-87FE-27A76C046CA4}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #class AOTExportTableRunDataContract
+        #{
+        #    int             threadId, rangeStart, rangeEnd;
+        #}
+      ENDSOURCE
+      SOURCE #parmThreadId
+        #[DataMemberAttribute]
+        #public int parmThreadId(int _threadId = threadId)
+        #{
+        #    threadId = _threadId;
+        #
+        #    return threadId;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: END
