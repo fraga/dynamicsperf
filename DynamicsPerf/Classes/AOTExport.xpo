@@ -80,7 +80,8 @@ Formatversion: 1
         #            tableRunDataContract.parmRangeStart(rangeStart);
         #            tableRunDataContract.parmRangeEnd(rangeEnd);
         #            //adds the task to the pool
-        #            header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
+        #            //header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
+        #            header.addRuntimeTask(tableRunTask, header.parmBatchHeaderId());
         #
         #            rangeStart = rangeEnd + 1;
         #        }
