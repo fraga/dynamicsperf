@@ -18,7 +18,6 @@ Formatversion: 1
       SOURCE #classDeclaration
         #class AOTExportTableRun extends SysOperationServiceController
         #{
-        #    Set TableSet;
         #}
       ENDSOURCE
       SOURCE #generateTableMetaData
@@ -39,7 +38,6 @@ Formatversion: 1
         #    RecordInsertList    fieldList;
         #    DatabaseLog         databaseLog;
         #    UtilIdElements      utilIdElements;
-        #    Enumerator          tableSetEnumerator;
         # //
         # // Variables used when looping through dictionary objects
         # // The variable is either initialized to 1 or to max # of objects
@@ -84,10 +82,6 @@ Formatversion: 1
         #//  Variable t is set to table id as we loop dictionary
         #//  Only SQL tables (not tmp or map) are selected
         #//
-        #    tableSetEnumerator = TableSet.getEnumerator();
-        #    while (tableSetEnumerator.moveNext())
-        #    {
-        #        t = tableSetEnumerator.current();
         #
         #        dictTable = dictionary.tableObject(t);
         #        if (dictTable.isSql() && !dictTable.isTempDb() && !dictTable.isTmp() && !dictTable.isView())
