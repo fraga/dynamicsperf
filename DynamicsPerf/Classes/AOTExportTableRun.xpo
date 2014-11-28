@@ -22,7 +22,7 @@ Formatversion: 1
       ENDSOURCE
       SOURCE #generateTableMetaData
         #[SysEntryPointAttribute]
-        #public void generateTableMetaData()
+        #public void generateTableMetaData(AOTExportTableRunDataContract _dataContract)
         #{
         #    DictTable           dictTable;
         #    DictIndex           dictIndex;
