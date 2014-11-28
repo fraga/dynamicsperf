@@ -92,7 +92,7 @@ Formatversion: 1
         #    while(t != dictionary.tableCnt2Id(rangeEnd))
         #    {
         #        dictTable = dictionary.tableObject(t);
-        #        if (dictTable.isSql() && !dictTable.isTempDb() && !dictTable.isTmp() && !dictTable.isView())
+        #        if (this.validateDictTable(dictTable))
         #        {
         #//
         #//          Loop through all methods for the table
@@ -290,6 +290,17 @@ Formatversion: 1
         #    fieldList.insertDatabase();
         #
         #    Info(strFmt('Finished set of tables'));
+        #}
+      ENDSOURCE
+      SOURCE #validateDictTable
+        #public boolean validateDictTable(DictTable _dictTable)
+        #{
+        #    return      _dictTable != null &&
+        #                _dictTable.id() != tableNum(Common) &&
+        #                _dictTable.isSql() &&
+        #                !_dictTable.isTempDb() &&
+        #                !_dictTable.isTmp() &&
+        #                !_dictTable.isView();
         #}
       ENDSOURCE
     ENDMETHODS
