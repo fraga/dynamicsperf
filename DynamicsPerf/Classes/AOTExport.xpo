@@ -73,7 +73,6 @@ Formatversion: 1
         #            tableRunTask.parmLoadFromSysLastValue(false);
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
         #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', tableId2name(dict.tableCnt2Id(rangeStart)), tableId2name(dict.tableCnt2Id(rangeEnd))));
-        #
         #            //creates the datacontract
         #            tableRunDataContract = null;
         #            tableRunDataContract = tableRunTask.getDataContractObject('_dataContract');
