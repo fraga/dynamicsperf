@@ -41,7 +41,6 @@ Formatversion: 1
         #    BatchHeader         header;
         #    Dictionary          dict = new Dictionary();
         #    int                 totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
-        #    Set                 tableSet;
         #    AOTExportTableRun   tableRunTask;
         #    try
         #    {
@@ -60,26 +59,16 @@ Formatversion: 1
         #
         #        while(threads && i < threads)
         #        {
-        #            tableSet = new Set(Types::Integer);
-        #
         #            i++;
         #            if(i == threads)
         #                rangeEnd = totalTables;
         #            else
         #                rangeEnd = rangeStart + step;
         #
-        #            addCount = rangeStart;
-        #
-        #            while(addCount <= rangeEnd)
-        #            {
-        #                tableSet.add(dict.tableCnt2Id(addCount));
-        #                addCount++;
-        #            }
         #
         #            tableRunTask = AOTExportTableRun::construct();
         #            tableRunTask.parmLoadFromSysLastValue(false);
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
-        #            tableRunTask.parmTableSet(tableSet);
         #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', rangeStart, rangeEnd));
         #
         #            header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
