@@ -73,6 +73,12 @@ Formatversion: 1
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
         #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', tableId2name(dict.tableCnt2Id(rangeStart)), tableId2name(dict.tableCnt2Id(rangeEnd))));
         #
+        #            //creates the datacontract
+        #            tableRunDataContract = null;
+        #            tableRunDataContract = tableRunTask.getDataContractObject('_dataContract');
+        #            tableRunDataContract.parmRangeStart(rangeStart);
+        #            tableRunDataContract.parmRangeEnd(rangeEnd);
+        #            //adds the task to the pool
         #            header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
         #
         #            rangeStart = rangeEnd + 1;
