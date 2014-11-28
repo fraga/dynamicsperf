@@ -28,7 +28,7 @@ Formatversion: 1
         #}
       ENDSOURCE
       SOURCE #parmThreads
-        #[DataMemberAttribute, SysOperationLabelAttribute(literalStr('threads'))]
+        #[DataMemberAttribute, SysOperationLabelAttribute('threads')]
         #public int parmThreads(int _threads = threads)
         #{
         #    threads = _threads;
