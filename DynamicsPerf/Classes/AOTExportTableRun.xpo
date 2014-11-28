@@ -10,13 +10,13 @@ Formatversion: 1
   CLASS #AOTExportTableRun
     PROPERTIES
       Name                #AOTExportTableRun
-      Extends             #SysOperationServiceController
+      Extends             #SysOperationServiceBase
       Origin              #{5750F1D5-ED66-494D-812C-829259071154}
     ENDPROPERTIES
     
     METHODS
       SOURCE #classDeclaration
-        #class AOTExportTableRun extends SysOperationServiceController
+        #class AOTExportTableRun extends SysOperationServiceBase
         #{
         #}
       ENDSOURCE
