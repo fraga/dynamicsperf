@@ -68,7 +68,7 @@ Formatversion: 1
         #            else
         #                rangeEnd = rangeStart + step;
         #
-        #            tableRunTask = new SysOperationServiceController(classStr(AOTExportTableRun), methodStr(AOTExportTableRun, generateTableMetaData));
+        #            tableRunTask = new SysOperationServiceController(classStr(AOTExportTableRun), methodStr(AOTExportTableRun, generateTableMetaData), SysOperationExecutionMode::Asynchronous);
         #             //sets the task batch
         #            tableRunTask.parmLoadFromSysLastValue(false);
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
