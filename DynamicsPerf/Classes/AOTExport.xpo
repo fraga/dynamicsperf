@@ -69,7 +69,7 @@ Formatversion: 1
         #             //sets the task batch
         #            tableRunTask.parmLoadFromSysLastValue(false);
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
-        #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', rangeStart, rangeEnd));
+        #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', tableId2name(dict.tableCnt2Id(rangeStart)), tableId2name(dict.tableCnt2Id(rangeEnd))));
         #
         #            header.addRuntimeTask(tableRunTask, BatchHeader::getCurrentBatchTask().RecId);
         #
