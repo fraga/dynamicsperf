@@ -25,7 +25,7 @@ Formatversion: 1
       SOURCE #classDeclaration
         #class AOTExport extends SysOperationServiceController
         #{
-        #    int threads;
+        #    int     threads;
         #}
       ENDSOURCE
       SOURCE #new
