@@ -73,6 +73,8 @@ Formatversion: 1
         #    boolean             eventupdate;
         #    boolean             eventrenamekey;
         #
+        #    int                 rangeStart, rangeEnd;
+        #
         #    tableList = new RecordInsertList(tableNum(aotTableProperties));
         #    indexList = new RecordInsertList(tableNum(aotIndexProperties));
         #    fieldList = new RecordInsertList(tableNum(aotIndexFields));
@@ -82,7 +84,13 @@ Formatversion: 1
         #//  Variable t is set to table id as we loop dictionary
         #//  Only SQL tables (not tmp or map) are selected
         #//
+        #    rangeStart = _dataContract.parmRangeStart();
+        #    rangeEnd = _dataContract.parmRangeEnd();
         #
+        #    t = dictionary.tableCnt2Id(rangeStart);
+        #
+        #    while(t != dictionary.tableCnt2Id(rangeEnd))
+        #    {
         #        dictTable = dictionary.tableObject(t);
         #        if (dictTable.isSql() && !dictTable.isTempDb() && !dictTable.isTmp() && !dictTable.isView())
         #        {
@@ -274,6 +282,7 @@ Formatversion: 1
         #                }
         #            }
         #        }
+        #
         #        t = dictionary.tableNext(t);
         #    }
         #    tableList.insertDatabase();
