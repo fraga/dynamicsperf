@@ -38,10 +38,12 @@ Formatversion: 1
         #[SysEntryPointAttribute]
         #public void performOperation(AOTExportDataContract _dataContract)
         #{
-        #    BatchHeader         header;
-        #    Dictionary          dict = new Dictionary();
-        #    int                 totalTables, rangeStart, rangeEnd, step, i = 0, addCount;
-        #    AOTExportTableRun   tableRunTask;
+        #    BatchHeader                     header;
+        #    Dictionary                      dict = new Dictionary();
+        #    int                             totalTables, rangeStart, rangeEnd, step, i = 0;
+        #    SysOperationServiceController   tableRunTask;
+        #    AOTExportTableRunDataContract   tableRunDataContract;
+        #
         #    try
         #    {
         #        threads = _dataContract.parmThreads();
