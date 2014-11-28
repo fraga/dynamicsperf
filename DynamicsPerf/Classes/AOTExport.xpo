@@ -51,7 +51,8 @@ Formatversion: 1
         #        if(!this.canGoBatch() || !this.isInBatch())
         #            throw error('this must be run in batch');
         #
-        #        header = BatchHeader::getCurrentBatchHeader();
+        #        if(!header)
+        #            header = BatchHeader::getCurrentBatchHeader();
         #
         #        totalTables = dict.tableCnt();
         #        rangeEnd = totalTables;
