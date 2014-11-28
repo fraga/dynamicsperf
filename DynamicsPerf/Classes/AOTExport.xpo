@@ -65,8 +65,8 @@ Formatversion: 1
         #            else
         #                rangeEnd = rangeStart + step;
         #
-        #
-        #            tableRunTask = AOTExportTableRun::construct();
+        #            tableRunTask = new SysOperationServiceController(classStr(AOTExportTableRun), methodStr(AOTExportTableRun, generateTableMetaData));
+        #             //sets the task batch
         #            tableRunTask.parmLoadFromSysLastValue(false);
         #            tableRunTask.batchInfo().parmGroupId(this.parmCurrentBatch().GroupId);
         #            tableRunTask.batchInfo().parmCaption(strFmt('ranges from %1 to %2', rangeStart, rangeEnd));
