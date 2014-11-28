@@ -117,7 +117,7 @@ Formatversion: 1
         #public static void main(Args args)
         #{
         #    AOTExport   aotExport = AOTExport::construct();
-        #
+        #    aotExport.parmLoadFromSysLastValue(false);
         #    aotExport.startOperation();
         #
         #}
